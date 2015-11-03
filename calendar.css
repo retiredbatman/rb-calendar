@@ -1,0 +1,103 @@
+  .Calendar {
+      background-color: #ddd;
+      box-shadow: 0 3px 10px #999;
+      border: 1px solid #aaa;
+      z-index: 1010;
+  }
+  .Calendar .CalendarTitle {
+      background-color: #666;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px;
+      font-weight: 700
+  }
+  .Calendar .monthTable {
+      float: left;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 4px;
+      border: 0;
+      margin-top: 0
+  }
+  .Calendar .monthTable.mid {
+      margin-left: 0;
+      margin-right: 0
+  }
+  .Calendar .monthTable.last {
+      margin-left: 0
+  }
+  .Calendar .monthTable.last.first {
+      margin-left: 4px
+  }
+  .Calendar .monthTable .monthHeader td {
+      border: 0;
+      height: 40px
+  }
+  .Calendar .monthTable .monthHeader td.monthTitle {
+      font-weight: 700;
+      font-size: 15px
+  }
+  .Calendar .monthTable .monthHeader td button {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      color: #000;
+      display: none;
+      padding: 10px
+  }
+  .Calendar .monthTable.first .monthHeader td.prev button,
+  .Calendar .monthTable.last .monthHeader td.next button {
+      display: block
+  }
+  .Calendar .monthTable.mid .monthHeader td.next button,
+  .monthTable.mid .monthHeader td.prev button {
+      display: none
+  }
+  .Calendar .monthTable tr th {
+      font-weight: 400;
+      height: 35px;
+      border: 0;
+      font-size: 12px
+  }
+  .Calendar .monthTable tr td {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      color: #666;
+      border: 1px solid #eee
+  }
+  .Calendar .monthTable tr td.past {
+      color: #ccc;
+      cursor: default
+  }
+  .Calendar .monthTable tr td.wd {
+      cursor: pointer
+  }
+  .Calendar .monthTable tr td.we {
+      color: #D84E55;
+      cursor: pointer
+  }
+  .Calendar .monthTable tr td.tdy {
+      color: #008;
+      cursor: pointer
+  }
+  .Calendar .monthTable tr td.day.current {
+      background-color: #D84E55;
+      color: #fff;
+      cursor: pointer
+  }
+  .Calendar .monthTable tr td.day {
+      background-color: #fff
+  }
+  .Calendar .monthTable tr td.current:hover,
+  .Calendar .monthTable tr td.tdy:hover,
+  .Calendar .monthTable tr td.wd:hover,
+  .Calendar .monthTable tr td.we:hover {
+      background-color: #D84E55;
+      color: #fff
+  }
+  .Calendar select{
+    color: #666;
+  }

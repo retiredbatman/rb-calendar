@@ -1,0 +1,19 @@
+{
+  "name": "rb-calendar",
+  "version": "0.0.3",
+  "description": "A calendar library for redBus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calendar",
+    "javascript"
+  ],
+  "author": "Sudip Roy <sudiproy89@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6"
+  }
+}
