@@ -15,5 +15,9 @@
   "dependencies": {
     "jquery": "^2.1.4",
     "moment": "^2.10.6"
+  },
+  "repository" :
+  { "type" : "git", 
+    "url" : "https://github.com/sudiproy89/rb-calendar.git"
   }
 }
