@@ -431,7 +431,7 @@
           if (months[i] === monthText) {
             opt.selected = true;
             monthSelect.appendChild(opt);
-            break;
+          //break;
           }
           monthSelect.appendChild(opt);
         }
