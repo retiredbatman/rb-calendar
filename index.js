@@ -428,8 +428,11 @@
           var opt = document.createElement('option');
           opt.value = months[i];
           opt.innerHTML = months[i];
-          opt.selected = true;
-          monthSelect.appendChild(opt);
+          if (months[i] === monthText) {
+            opt.selected = true;
+            monthSelect.appendChild(opt);
+            break;
+          }
           monthSelect.appendChild(opt);
         }
         yearSelect = document.createElement('select');
