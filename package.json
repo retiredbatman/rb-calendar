@@ -1,6 +1,6 @@
 {
   "name": "rb-calendar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A calendar library for redBus",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "jquery": "^2.1.4",
     "moment": "^2.10.6"
   },
-  "repository" :
-  { "type" : "git", 
-    "url" : "https://github.com/sudiproy89/rb-calendar.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudiproy89/rb-calendar.git"
   }
 }
