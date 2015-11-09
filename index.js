@@ -582,9 +582,10 @@
 
       shownFirstMonthDate = moment(options.selectedDate).startOf('month');
       if (options.showYearAndMonthMenu) {
+        options.endsLess = options.endsLessThanNow || 0;
         options.startDate = moment(options.now).subtract(100, 'years').startOf('month');
-        options.endDate = options.now;
-        options.selectedDate = options.now;
+        options.endDate = moment(options.now).subtract(options.endsLess, 'years');
+        options.selectedDate = options.endDate;
         shownFirstMonthDate = moment(options.selectedDate).startOf('month');
         renderWithMenus();
       } else {

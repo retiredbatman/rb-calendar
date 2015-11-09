@@ -1,3 +1,6 @@
+  .hide{
+    display: none;
+  }
   .Calendar {
       background-color: #ddd;
       box-shadow: 0 3px 10px #999;
