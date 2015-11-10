@@ -40,8 +40,8 @@
       viewport.right = viewport.left + win.width();
       viewport.bottom = viewport.top + win.height();
       var bounds = $(elem).offset();
-      bounds.right = bounds.left + $($txtOnwardCalendar).outerWidth();
-      bounds.bottom = bounds.top + $($txtOnwardCalendar).outerHeight();
+      bounds.right = bounds.left + $(elem).outerWidth();
+      bounds.bottom = bounds.top + $(elem).outerHeight();
       var avaiableHeight = viewport.bottom - bounds.bottom;
       if (avaiableHeight < $(container).outerHeight(true)) {
         return false;
@@ -305,7 +305,7 @@
       }
       if (isHeightAvailable) {
         $(container).css({
-          'top': $(elem).offsetTop() - $(container).outerHeight(true) - $(elem).outerHeight(true)
+          'top': $(elem).offset().top - $(container).outerHeight(true) - $(elem).outerHeight(true)
         });
       }
       removeClass(container, 'hide');
