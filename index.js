@@ -305,7 +305,7 @@
       }
       if (isHeightAvailable) {
         $(container).css({
-          'top': $(elem).offset().top - $(container).outerHeight(true) - $(elem).outerHeight(true)
+          'top': $(elem).offset().top - $(container).outerHeight(true) - 10
         });
       }
       removeClass(container, 'hide');
