@@ -31,6 +31,24 @@
       callback(date);
     };
 
+    var isHeightAvailable = function() {
+      var win = $(window);
+      var viewport = {
+        top: win.scrollTop(),
+        left: win.scrollLeft()
+      };
+      viewport.right = viewport.left + win.width();
+      viewport.bottom = viewport.top + win.height();
+      var bounds = $(element).offset();
+      bounds.right = bounds.left + $($txtOnwardCalendar).outerWidth();
+      bounds.bottom = bounds.top + $($txtOnwardCalendar).outerHeight();
+      var avaiableHeight = viewport.bottom - bounds.bottom;
+      if (avaiableHeight < $(container).outerHeight(true)) {
+        return false;
+      }
+      return true;
+    };
+
     var addEvent = function(obj, type, fn, useCapture) {
       if (obj.attachEvent) {
         obj['e' + type + fn] = fn;
@@ -284,6 +302,11 @@
         renderWithMenus();
       } else {
         render();
+      }
+      if (isHeightAvailable) {
+        $(container).css({
+          'top': $(element).offsetTop() - $(container).outerHeight(true) - $(element).outerHeight(true)
+        });
       }
       removeClass(container, 'hide');
 
