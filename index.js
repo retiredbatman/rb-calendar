@@ -303,7 +303,7 @@
       } else {
         render();
       }
-      if (isHeightAvailable()) {
+      if (!isHeightAvailable()) {
         $(container).css({
           'top': $(elem).offset().top - $(container).outerHeight(true) - 5
         });
