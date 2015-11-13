@@ -237,7 +237,7 @@
         });
       } else {
         $(elem).click(function(e) {
-          $(".Calendar").hide();
+          $(".rb-calendar").hide();
           show();
           e.stopPropagation();
         });
@@ -353,8 +353,8 @@
         prevContainer = container;
       }
       container = document.createElement('div');
-      container.className = 'Calendar';
-      container.id = 'calendar_' + elem.id;
+      container.className = 'rb-calendar';
+      container.id = 'rb-calendar_' + elem.id;
 
       var elemRect = getElementOffset(elem);
 
@@ -407,12 +407,12 @@
       var yearText = date.get('year');
 
       var monthTable = document.createElement('table');
-      monthTable.className = 'monthTable';
+      monthTable.className = 'rb-monthTable';
 
       var monthTableBody = document.createElement('tbody');
 
       var monthTableHeader = document.createElement('tr');
-      monthTableHeader.className = 'monthHeader';
+      monthTableHeader.className = 'rb-monthHeader';
 
       var prevButton = document.createElement('button');
       text = document.createTextNode('<');

@@ -1,13 +1,13 @@
   .hide{
     display: none;
   }
-  .Calendar {
+  .rb-calendar {
       background-color: #ddd;
       box-shadow: 0 3px 10px #999;
       border: 1px solid #aaa;
       z-index: 1010;
   }
-  .Calendar .CalendarTitle {
+  .rb-calendar .rb-calendarTitle {
       background-color: #666;
       color: #fff;
       text-transform: uppercase;
@@ -15,7 +15,7 @@
       padding: 10px;
       font-weight: 700
   }
-  .Calendar .monthTable {
+  .rb-calendar .rb-monthTable {
       float: left;
       border-collapse: collapse;
       font-size: 14px;
@@ -23,25 +23,25 @@
       border: 0;
       margin-top: 0
   }
-  .Calendar .monthTable.mid {
+  .rb-calendar .rb-monthTable.mid {
       margin-left: 0;
       margin-right: 0
   }
-  .Calendar .monthTable.last {
+  .rb-calendar .rb-monthTable.last {
       margin-left: 0
   }
-  .Calendar .monthTable.last.first {
+  .rb-calendar .rb-monthTable.last.first {
       margin-left: 4px
   }
-  .Calendar .monthTable .monthHeader td {
+  .rb-calendar .rb-monthTable .rb-monthHeader td {
       border: 0;
       height: 40px
   }
-  .Calendar .monthTable .monthHeader td.monthTitle {
+  .rb-calendar .rb-monthTable .rb-monthHeader td.monthTitle {
       font-weight: 700;
       font-size: 15px
   }
-  .Calendar .monthTable .monthHeader td button {
+  .rb-calendar .rb-monthTable .rb-monthHeader td button {
       background-color: transparent;
       border: 0;
       cursor: pointer;
@@ -49,21 +49,21 @@
       display: none;
       padding: 10px
   }
-  .Calendar .monthTable.first .monthHeader td.prev button,
-  .Calendar .monthTable.last .monthHeader td.next button {
+  .rb-calendar .rb-monthTable.first .rb-monthHeader td.prev button,
+  .rb-calendar .rb-monthTable.last .rb-monthHeader td.next button {
       display: block
   }
-  .Calendar .monthTable.mid .monthHeader td.next button,
-  .monthTable.mid .monthHeader td.prev button {
+  .rb-calendar .rb-monthTable.mid .rb-monthHeader td.next button,
+  .rb-monthTable.mid .rb-monthHeader td.prev button {
       display: none
   }
-  .Calendar .monthTable tr th {
+  .rb-calendar .rb-monthTable tr th {
       font-weight: 400;
       height: 35px;
       border: 0;
       font-size: 12px
   }
-  .Calendar .monthTable tr td {
+  .rb-calendar .rb-monthTable tr td {
       width: 40px;
       height: 40px;
       text-align: center;
@@ -71,36 +71,36 @@
       color: #666;
       border: 1px solid #eee
   }
-  .Calendar .monthTable tr td.past {
+  .rb-calendar .rb-monthTable tr td.past {
       color: #ccc;
       cursor: default
   }
-  .Calendar .monthTable tr td.wd {
+  .rb-calendar .rb-monthTable tr td.wd {
       cursor: pointer
   }
-  .Calendar .monthTable tr td.we {
+  .rb-calendar .rb-monthTable tr td.we {
       color: #D84E55;
       cursor: pointer
   }
-  .Calendar .monthTable tr td.tdy {
+  .rb-calendar .rb-monthTable tr td.tdy {
       color: #008;
       cursor: pointer
   }
-  .Calendar .monthTable tr td.day.current {
+  .rb-calendar .rb-monthTable tr td.day.current {
       background-color: #D84E55;
       color: #fff;
       cursor: pointer
   }
-  .Calendar .monthTable tr td.day {
+  .rb-calendar .rb-monthTable tr td.day {
       background-color: #fff
   }
-  .Calendar .monthTable tr td.current:hover,
-  .Calendar .monthTable tr td.tdy:hover,
-  .Calendar .monthTable tr td.wd:hover,
-  .Calendar .monthTable tr td.we:hover {
+  .rb-calendar .rb-monthTable tr td.current:hover,
+  .rb-calendar .rb-monthTable tr td.tdy:hover,
+  .rb-calendar .rb-monthTable tr td.wd:hover,
+  .rb-calendar .rb-monthTable tr td.we:hover {
       background-color: #D84E55;
       color: #fff
   }
-  .Calendar select{
+  .rb-calendar select{
     color: #666;
   }
