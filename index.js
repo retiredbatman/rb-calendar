@@ -303,6 +303,7 @@
       } else {
         render();
       }
+      removeClass(container, 'hide');
 
       addEvent(document, 'click', docEventHandler, false);
     };
@@ -390,15 +391,12 @@
       } else {
         container.style.left = elemRect.left + 'px';
       }
-
+      bindEvents();
       if (!isHeightAvailable()) {
         $(container).css({
           'top': $(elem).offset().top - $(container).outerHeight(true) - 5
         });
       }
-      removeClass(container, 'hide');
-      bindEvents();
-
 
     };
 
