@@ -515,6 +515,7 @@
             var week;
             var day_class;
             var day;
+            var day_content;
             var monthContent = document.createDocumentFragment();
 
 
