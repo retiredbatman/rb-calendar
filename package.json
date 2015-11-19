@@ -1,6 +1,6 @@
 {
   "name": "rb-calendar",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A calendar library for redBus",
   "main": "index.js",
   "scripts": {
