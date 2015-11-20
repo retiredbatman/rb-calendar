@@ -35,7 +35,7 @@
                 options.selectedDate = moment(value);
             }
             if (elem.tagName && elem.tagName.toLowerCase() === "input" && elem.type.toLowerCase() === "text") {
-                elem.value = options.selectedDate.format("ddd, DD MMM , YYYY");
+                elem.value = options.selectedDate.format(options.dateFormat);
             }
         };
         var internalCallback = function(date) {
@@ -608,7 +608,7 @@
 
             }
             return monthContent;
-        }
+        };
 
 
         var initialize = function(eId, opts, cb) {
@@ -624,6 +624,7 @@
             options.selectedDate = opts.selectedDate || options.startDate;
             options.endDate = opts.endDate || moment(options.startDate).add(100, 'years');
             options.showYearAndMonthMenu = opts.showYearAndMonthMenu || false;
+            options.dateFormat = opts.dateFormat || "ddd, DD MMM , YYYY";
 
             shownFirstMonthDate = moment(options.selectedDate).startOf('month');
             if (options.showYearAndMonthMenu) {
