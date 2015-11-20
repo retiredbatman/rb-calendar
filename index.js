@@ -591,9 +591,9 @@
 
 
                     if (day_class != 'past' && day_class != 'empty') {
-                        //(function(loop) {
-                        addEvent(day, 'click', clickDayHandlerDelegate(loopDate), false);
-                        //})(moment(loopDate));
+                        (function(loop) {
+                        addEvent(day, 'click', clickDayHandlerDelegate(loop), false);
+                        })(moment(loopDate));
                     }
 
                     if (day_class != 'empty') {
