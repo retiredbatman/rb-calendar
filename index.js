@@ -401,17 +401,17 @@
                 container.style.left = elemRect.left + 'px';
             }
             bindEvents();
-            if (!isHeightAvailable()) {
-                $(container).css({
-                    'top': $(elem).offset().top - $(container).outerHeight(true) - 5
-                });
-            }
+            // if (!isHeightAvailable()) {
+            //     $(container).css({
+            //         'top': $(elem).offset().top - $(container).outerHeight(true) - 5
+            //     });
+            // }
 
         };
 
         var renderMonth = function(date, isMenus) {
             var i, text;
-            var opt;
+            var opt,currentYear;
             var monthText = months[date.get('month')];
             var yearText = date.get('year');
 
