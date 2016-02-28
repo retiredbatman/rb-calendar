@@ -1,13 +1,16 @@
+#redBus calendar
+
 This library is to be used for creating calendar widgets. This has a dependency on momentjs and jquery.
-The dependency on jquery will be removed in sometime. This calendar module is currently being used in http://www.redBus.in
+The dependency on jquery will be removed in sometime. This calendar module is currently being used in [redbus](http://www.redbus.in)
 
-Download:-
+##Download
 
-npm install rb-calendar
+`npm install rb-calendar`
 
 
-Example :-
+##Example
 
+```javascript
 var Calendar = require('rb-calendar');
 
 var domCalendar = Calendar();
@@ -26,3 +29,4 @@ domCalendar.init(id_of_dom_elem_bound_to_calendar,{
 },function(date){//callback
 	//do something with selected date
 });
+```
